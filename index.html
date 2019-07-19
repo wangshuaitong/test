@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="utf-8"  />
+        <title>index</title>
+        <style src="./css/index.css"></style>
+        <script src="./js/jquery-1.7.1.min.js"></script>
+        
+    </head>
+    <body>
+        <p>
+            明天，今天，昨天
+        </p>
+        <button id="clickRequest">请求</button>
+    </body>
+    
+    <script>
+        var ninjia = '第一';
+        //var testVar = 10;
+        function sk(){
+            console.log(action);
+            //console.log(intro);
+            //let const的注册范围包含了块级范围，即包含了for循环的范围
+            debugger;
+            var testVar = 20;
+            console.log(xunhuan);
+            for(var xunhuan = 0;xunhuan < 10;xunhuan++){
+                console.log(xunhuan);
+            }
+            var action = "第二";
+            const fir = "firstName";
+            var  to = fir + "second";
+            console.log(to);
+            function re(){
+                var intro = "第三";
+                console.log(intro);
+                console.log(action);
+                console.log(ninjia);
+            }
+            re();
+        }
+
+        // typeof fun === 'function';
+        // var fun = 2;
+        // function fun (){}
+        // typeof fun === "function";
+    </script>
+    <script src="./js/index.js"></script>
+</html>
