@@ -3,6 +3,7 @@
     var ningjia = "立即执行函数参数";
     console.log(ningjia);
     var para = "参数";
+    debugger;
     console.log(pp);
 })(12);
 
