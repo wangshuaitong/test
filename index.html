@@ -8,11 +8,19 @@
         <script src="./js/jquery-1.7.1.min.js"></script>
         
     </head>
-    <body>
+    <body ng-app = "appTest">
         <p>
             明天，今天，昨天
         </p>
         <button id="clickRequest">请求</button>
+
+        <div ng-controller = "testController">
+            <div test-directive></div>
+            <p>实现angularjs效果</p>
+            <h2>完成angularjs 的service效果，{{firstName}}</h2>
+        </div>
+        
+        <test-directive></test-directive>
     </body>
     
     <script>
@@ -54,9 +62,11 @@
         // developer提交冲突
 
         // 添加angularjs的效果和成果
-
+        
     </script>
     <script src="./js/index.js"></script>
     <script src="./js/common.js"></script>
-
+    <script src="./js/controller.js"></script>
+    <script src="./js/directive.js"></script>
+    <script src="./js/class.js"></script>
 </html>
