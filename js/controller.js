@@ -5,7 +5,6 @@ appTest.controller("testController",function($scope){
     $scope.firstName = "汪易道";
 
     // 使用class
-
     let test = new Test();
     console.log(test.print());
 });
