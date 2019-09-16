@@ -19,10 +19,14 @@
             <p>实现angularjs效果</p>
             <h2>完成angularjs 的service效果，{{firstName}}</h2>
         </div>
-        
-        <test-directive></test-directive>
-
+        <div>
+            <test-directive></test-directive>
+        </div>
         <!-- 测试链式调用 -->
+
+
+        <!-- 在页面上添加图片效果 -->
+        <img id="Image" src="./img/1.jpg" width="170" height="170"/>
 
         <div>
             <button onclick="connectLoop()">链式调用</button>
@@ -31,6 +35,8 @@
     </body>
     
     <script>
+
+        console.log($("#clickRequest").html("发送请求"));
         var ninjia = '第一';
         //var testVar = 10;
         function sk(){
@@ -79,4 +85,6 @@
     <script src="./js/testThen.js"></script>
     <script src="./js/common.js"></script>
     <script src="./js/connectLoop.js"></script>
+
+    <script src="./js/testJquery.js"></script>
 </html>
