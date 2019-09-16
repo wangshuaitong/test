@@ -13,3 +13,33 @@
     console.log(para);
     console.log("立即函数只执行自身的函数");
 }(10);
+
+
+// cook().then(function(data){
+
+//     // 开始执行-----------
+//     console.log("开始执行-------------");
+//     return eat(data);
+// }).then(function(data){
+//     return wash(data);
+// }).then(function(data){
+//     console.log(data);
+// });
+
+// readFile("example.txt",function(err,contents){
+//     if(err){
+//         throw err;
+//     }
+
+//     console.log(contents);
+// });
+
+// console.log("Hi");
+cook()
+.then(function(data){
+    throw new Error('米饭被打翻了！');
+    eat(data);
+})
+.catch(function(data){
+    console.log(data);
+});
