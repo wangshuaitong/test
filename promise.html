@@ -33,6 +33,9 @@
         var outer = document.querySelector('.outer');
         var inner = document.querySelector('.inner');
 
+        $("p").click(function(){
+            alert("点击字段");
+        })
         // Let's listen for attribute changes on the
         // outer element
         new MutationObserver(function() {
