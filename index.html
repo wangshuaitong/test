@@ -31,14 +31,41 @@
         <div>
             <button onclick="connectLoop()">链式调用</button>
         </div>
+
+        <div>
+            <input class="password" placeholder="请输入密码">
+        </div>
+        
+        <div>
+            <input id="new.target" type="button" value="测试">
+        </div>
         
     </body>
     
     <script>
 
-        console.log($("#clickRequest").html("发送请求"));
-        var ninjia = '第一';
+
+        // var te = {a:"1",b:"2"};
+        // $("#Image").on("mousemove",te,function(da){
+        //     alert(da.data.a);
+        //     alert("2");
+        // })
+
+        // 测试blur,change,keyup等事件
+        $(".password").blur(function(){
+            alert("te.data.a");
+            alert("失焦验证");
+
+            // alert(new A().onClick());
+        })
+
+        // 测试HTML添加文字
+
+        // console.log($("#clickRequest").html("发送请求"));
+        // var ninjia = '第一';
         //var testVar = 10;
+
+
         function sk(){
             console.log(action);
             // console.log(intro);
@@ -75,6 +102,26 @@
         // developer提交冲突
 
         // 添加angularjs的效果和成果
+
+
+        // 2019/9/25 测试class没有construct方法
+        // 结果：如果没有constructor方法，那么就会不停循环调用方法。
+        // class A{
+
+        //     // constructor(password){
+        //     //     this.password = password;
+        //     // }
+        //     onClick(){
+        //         alert("调用class方法");
+        //     }
+        // }
+
+        // console.log(new A().onClick);
+        
+
+        // 测试调用new.target调用本函数
+        $("#new.target").on("")
+
     </script>
     <script src="./js/index.js"></script>
     
