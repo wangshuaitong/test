@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>测试</title>
+        <script src="../js/classTest.js"></script>
+        <script>
+            function Test(){
+                // this = new Object();
+                // this = new Test();
+                alert(this);
+            }
+            Test.sun = function(){
+                alert(this);
+                alert("求和");
+            }
+            // Test.sun();
+            //new Test().sun();
+
+            let a = new Controller();
+            a.aler();
+            new Controller().aler();
+            alert(a.aler()==new Controller().aler());
+        </script>
+    </head>
+    <body>
+        <p>测试</p>
+
+        
+    </body>
+</html>
