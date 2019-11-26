@@ -93,4 +93,11 @@ Person.prototype.sayName = function() {
   alert(this.name);
 }
 
+// js 代码提示
+
+// document.
+// document.getElementsByTagName;
+
+var a = {};
+var b = [];
 

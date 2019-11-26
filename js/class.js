@@ -18,6 +18,10 @@ class Test{
         this.age = 10;
         console.log("实现打印的效果",this.name);
         console.log("直接使用构造方法的属性"+this.age);
+
+        console.log(typeof new.target)
     }
+
+
 }
 
